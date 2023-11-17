@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div id="page">
+            <h1>Canvas</h1>
+            <canvas id="canvas"></canvas>
+            <div id="tool-bar">
+                <span>
+                    <label for="color-button">Color</label>
+                    <input type="color" class="filter-button" id="color-button" />
+                </span>
+                <span>
+                    <label for="width-button">Line Width</label>
+                    <input type="range" class="filter-button" id="width-button" min="1" max="30" />
+                </span>
+                <span>
+                    <button class="filter-button" id="draw-button">✏️ Draw</button>
+                </span>
+                <span>
+                    <button class="filter-button" id="erase-button">🧽 Erase</button>
+                </span>
+                <span>
+                    <button class="filter-button" id="reset-button">Reset↺</button>
+                </span>
+                <span>
+                    <button class="filter-button" id="save-button">💾 Save Image</button>
+                </span>
+                <span>
+                    <button class="filter-button" id="circle-button">◯ Circle</button>
+                </span>
+                <span>
+                    <button class="filter-button" id="triangle-button">△ Triangle</button>
+                </span>
+                <span>
+                    <button class="filter-button" id="rectangle-button">◻ Rectangle</button>
+                </span>
+                <span>
+                    <label for="size-input">Size</label>
+                    <input type="range" class="filter-button" id="size-input" min="1" max="100" value="20"/>
+                </span>
+            </div>
+        </div>
+        <script src="./app.js" type="module"></script>
+    </body>
+</html>
